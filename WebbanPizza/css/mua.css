@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Phần kiểu cho sản phẩm */
+.product-item {
+    margin: 20px auto; /* Đặt margin top và bottom là 20px, margin left và right tự động căn giữa */
+    padding: 20px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-item h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.product-item h2 {
+    font-size: 16px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.product-item h4 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.product-item .price {
+    font-size: 20px;
+    color: orange; /* Màu cam */
+    margin-top: 10px;
+}
+
+.product-item button {
+    background-color: green; /* Màu xanh lá */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+}
+
+.product-item button:hover {
+    background-color: greenyellow; /* Màu xanh lá nhạt */
+}
+
+/* Phần kiểu cho các liên kết */
+a {
+    text-decoration: none;
+    color: inherit; /* Màu kế thừa từ cha */
+}
+
+a:hover {
+    text-decoration: underline;
+}

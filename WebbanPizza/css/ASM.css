@@ -1,0 +1,161 @@
+.logo img{
+    width: 250px;
+}
+.menu>ul>li{
+    display: inline-block;
+    position: relative;
+}
+.menu>ul>li>a img{
+    width: 25px;
+}
+.menu>ul>li>a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+    font-size: larger;
+    line-height: 40px;
+    padding: 0 10px;
+}
+.menu>ul>li>a:hover{
+    background-color: darkgreen;
+}
+.menu>ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    background-color:green;
+    text-align:left;
+    
+}
+.menu ul ul{
+    position: absolute;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    width: 200px;
+    background-color: darkgreen;
+    box-shadow: 0 0 1px white;
+}
+.menu ul ul a{
+    display: block;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    padding: 0 10px;
+}
+.menu ul ul a:hover{
+    background-color: green;
+    color: white;
+}
+.menu>ul>li:hover>ul{
+    display: block;
+}
+.giohang img{
+    width: 50px;
+
+}
+.giohang>ul>li{
+    display: inline-block;
+    position: relative;
+    
+}
+.giohang>ul>li>a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+    font-size: larger;
+    line-height: 40px;
+    padding: 0 10px;
+}
+.giohang>ul>li>a:hover{
+    background-color: darkgreen;
+}
+.giohang>ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    background-color:green;
+    text-align:right;
+    
+}
+
+
+
+.footer {
+    background-color: darkgreen;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 200px;
+    margin: 10px 0;
+}
+
+.footer-section h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid white;
+    margin-top: 20px;
+}
+
+.footer-section.social ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section.social ul li {
+    margin: 0 5px;
+}
+
+.footer-section.social ul li img {
+    width: 24px;
+    height: 24px;
+}
+
+.banner img {
+    width: 80%;
+    height: auto;
+}

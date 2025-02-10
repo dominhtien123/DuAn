@@ -1,0 +1,333 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 5px;
+    padding: 5px;
+}
+.logo {
+    display: block;
+    text-align: center;
+}
+
+.logo img {
+    display: inline-block; 
+    vertical-align: middle;
+}
+.logo-text {
+    color: black;
+    text-decoration: none; 
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+}
+
+.spacer {
+    flex: 1; 
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.top-bar {
+    background-color: white; 
+    color: black; 
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .logo img {
+    height: 100px; /* Increased logo size */
+    vertical-align: middle;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    margin-left: 80%;
+}
+
+.user-menu a {
+    color: black; /* Changed to contrast with yellow background */
+    margin-left: 15px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    transition: color 0.3s, background-color 0.3s; /* Added color transition */
+}
+
+
+.user-menu img {
+    margin-right: 5px;
+}
+
+.main-nav {
+    background-color: darkgreen ; /* Changed to match logo color */
+    color: white; /* Changed to contrast with yellow background */
+}
+
+.main-nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin: 0 20px;
+    display: inline-block;
+}
+
+.main-nav ul li a {
+    color: white; /* Changed to contrast with yellow background */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.main-nav ul li a:hover {
+    color: white;
+    background-color: green;
+}
+
+.main-nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: darkgreen; /* Changed to match logo color */
+    padding: 0;
+}
+
+.main-nav ul li:hover ul {
+    display: block;
+}
+
+.main-nav ul li ul li {
+    display: block;
+    width: 100%;
+}
+
+.main-nav ul li ul li a {
+    padding: 10px 20px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-item {
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for smooth effect */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: 50%;
+}
+
+.product-item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.product-item p.price {
+    font-size: 14px;
+    margin-top: 5px;
+    color: orangered;
+    font-weight: bold;
+}
+
+.product-item button {
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Added color transition */
+}
+
+.product-item button:hover {
+    background-color: yellow; /* Change to yellow on hover */
+    color: black; /* Change text color to black on hover for better readability */
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 4px 8px black; /* Add shadow */
+}
+
+
+
+
+.brand-logos {
+    padding: 20px 0;
+    background-color: white;
+}
+
+.brand-logos .container {
+    text-align: center;
+}
+
+.brand-logos h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logos-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-item img {
+    width: 150px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logos-grid {
+        flex-wrap: wrap;
+    }
+
+    .logo-item {
+        flex: 1 1 50%;
+        margin-bottom: 20px;
+    }
+
+    .logo-item img {
+        width: 100px;
+    }
+}
+
+
+
+/*trag noi bat*/
+.tien {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.tien h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.brands-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.brand-item {
+    width: 30%;
+    margin-bottom: 2em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.brand-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.brand-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px black;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: darkgreen;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 200px;
+    margin: 10px 0;
+}
+
+.footer-section h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid white;
+    margin-top: 20px;
+}
+
+.footer-section.social ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section.social ul li {
+    margin: 0 5px;
+}
+
+.footer-section.social ul li img {
+    width: 24px;
+    height: 24px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}

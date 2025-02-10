@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ThongTinTT.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/0003940_logo den.png" alt="">
+        <h2>Thông Tin Thanh Toán</h2><br>
+        <form action="login.php" method="post">
+            <div class="form-group" method="post">
+                <label for="fullname">Họ và tên:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa chỉ:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+        </form>
+        <a href="muaTC.html"><button type="submit">Mua Ngay</button></a>
+    </div>
+    <script>
+        const paymentForm = document.getElementById('payment-form');
+        paymentForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Ngăn chặn form gửi dữ liệu đi
+
+            // Lấy thông tin người dùng từ form
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const address = document.getElementById('address').value;
+            const phone = document.getElementById('phone').value;
+
+            // Ở đây bạn có thể thực hiện các xử lý khác như kiểm tra dữ liệu hợp lệ, gửi dữ liệu đến server, vv.
+
+            // Sau khi xử lý xong, bạn có thể chuyển hướng người dùng đến trang cảm ơn hoặc trang tiếp theo
+            // window.location.href = 'trang-cam-on.html';
+        });
+    </script>
+</body>
+</html>
